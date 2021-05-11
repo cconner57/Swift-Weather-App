@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A504E21E2645A3540046692F /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504E21D2645A3540046692F /* ContentModel.swift */; };
 		A5096ECF26443F2F00970D1A /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5096ECE26443F2F00970D1A /* WeatherApp.swift */; };
 		A5096ED126443F2F00970D1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5096ED026443F2F00970D1A /* ContentView.swift */; };
 		A5096ED326443F3100970D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5096ED226443F3100970D1A /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A504E21D2645A3540046692F /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		A5096ECB26443F2F00970D1A /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5096ECE26443F2F00970D1A /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		A5096ED026443F2F00970D1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				A5096EDF26443FFC00970D1A /* View Models */,
 				A5096EE02644400500970D1A /* Views */,
 				A5096ED226443F3100970D1A /* Assets.xcassets */,
+				A5096ECE26443F2F00970D1A /* WeatherApp.swift */,
 				A5096ED726443F3100970D1A /* Info.plist */,
 				A5096ED426443F3100970D1A /* Preview Content */,
 			);
@@ -87,7 +90,7 @@
 		A5096EDF26443FFC00970D1A /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				A5096ECE26443F2F00970D1A /* WeatherApp.swift */,
+				A504E21D2645A3540046692F /* ContentModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				A5096EE326445F1800970D1A /* WeekItem.swift in Sources */,
 				A5096ECF26443F2F00970D1A /* WeatherApp.swift in Sources */,
 				A51A96D82644BAFA005FCCCF /* Weather.swift in Sources */,
+				A504E21E2645A3540046692F /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
