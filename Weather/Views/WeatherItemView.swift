@@ -4,25 +4,6 @@ struct ContentView: View {
 	
 	@EnvironmentObject var model: ContentModel
 	
-	func findWeatherImage(main: String) -> Any {
-		switch main {
-		case "Clear" :
-			return Image(systemName: "sun.min.fill")
-		case "Thunderstorm" :
-			return Image(systemName: "sun.min.fill")
-		case "Drizzle" :
-			return Image(systemName: "sun.min.fill")
-		case "Rain" :
-			return Image(systemName: "sun.min.fill")
-		case "Snow" :
-			return Image(systemName: "sun.min.fill")
-		case "Clouds" :
-			return Image(systemName: "sun.min.fill")
-		default:
-			return Image(systemName: "sun.min.fill")
-		}
-	}
-	
 	var body: some View {
 		
 		VStack {
@@ -33,14 +14,14 @@ struct ContentView: View {
 				VStack {
 					HStack(spacing: 60) {
 						VStack(alignment: .leading) {
-							Text(model.weatherSpecs.name)
+							Text("Cupertino")
 								.font(.title2)
-							Text("78°")
+							Text("76°")
 								.font(.largeTitle)
 						}
 						.padding()
 						
-						Image(systemName: "sun.min.fill")
+						Image(systemName: ContentModel.conditionIcon(weather: 800))
 							.foregroundColor(Color(.systemYellow))
 							.font(.system(size: 100))
 							.padding()
@@ -98,11 +79,5 @@ struct ContentView: View {
 		.background(Color.blue)
 		.foregroundColor(.white)
 		.ignoresSafeArea()
-	}
-}
-
-struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
 	}
 }

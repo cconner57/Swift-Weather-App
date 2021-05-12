@@ -1,34 +1,32 @@
 import Foundation
 
 struct WeatherData: Decodable {
-	var weather: [Weather]
-	var main: Main
+	var current: Current
+	
+}
+
+struct Current: Decodable {
+	var sunrise: Int
+	var sunset: Int
+	var temp: Double
+	var pressure: Int
+	var humidity: Int
+	var uvi: Double
+	var clouds: Int
 	var visibility: Int
-	var wind: Wind
-	var sys: Country
-	var name: String
+	var wind_speed: Int
+	var weather: [Weather]
 }
 
 struct Weather: Decodable {
-	var ida: Int
+	var id: Int
 	var main: String
 	var description: String
 }
 
-struct Main: Decodable {
-	var temp: Double
-	var temp_min: Double
-	var temp_max: Double
-	var pressure: Int
-	var humidity: Int
-}
-
-struct Wind: Decodable {
-	var speed: Double
-}
-
-struct Country: Decodable {
-	var country: String
-	var sunrise: Int
-	var sunset: Int
+struct TestItem {
+	var id: Int
+	var image: String
+	var city: String
+	var temp: String
 }
